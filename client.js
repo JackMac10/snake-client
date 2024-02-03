@@ -7,19 +7,28 @@ const connect = function () {
 
   // interpret incoming data as text
   conn.setEncoding("utf8");
-  
+
   conn.on("connect", () => {
     console.log("welcome, My snakey friend")
     conn.write('Name: jj')
+    conn.write('Move: up')
+    setInterval(() => {
+     
+    }, 50);
+
   });
 
   conn.on("data", (data) => {
     console.log(data);
   });
-  
-  
+
+/* //conn.write('Move: up');
+Move: Down
+Move: Left
+Move: Right
+*/
 
 
   return conn;
 };
-  module.exports = {connect}
+module.exports = { connect }
