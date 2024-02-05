@@ -9,12 +9,10 @@ const connect = function () {
   conn.setEncoding("utf8");
 
   conn.on("connect", () => {
-    console.log("welcome, My snakey friend")
     conn.write('Name: jj')
-    conn.write('Move: up')
-    setInterval(() => {
-     
-    }, 50);
+    console.log("welcome, My snakey friend")
+  
+    
 
   });
 
