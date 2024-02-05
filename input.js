@@ -19,18 +19,22 @@ const handleUserInput = function (data, conn) {
     process.exit();
   }
 if (data === 'w') {
-  console.log(data)
   connection.write('Move: up')
 } else if (data === 's') {
-  console.log(data)
   connection.write('Move: down')
 } else if (data === 'a') {
-  console.log(data)
   connection.write('Move: left')
 } else if (data === 'd') {
-  console.log(data)
   connection.write('Move: right')
-} 
+} else if (data === '1') {
+  connection.write('Say: sssssssss')
+} else if (data === '2') {
+  connection.write('Say: AHHHHH')
+} else if (data === '3') {
+  connection.write('Say: stay away from my food!')
+}  else if (data === '4') {
+  connection.write('Say: $*@%!!')
+}
 };
 
 
