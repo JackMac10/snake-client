@@ -1,8 +1,9 @@
+// dictate connection addresses
 const IP = "localhost"; // IP address here,
 const PORT = 50541; // PORT number here,
 
 
-
+// assert input comunication with program
 const setupInput = (conn) => {
   connection = conn;
   const stdin = process.stdin;
@@ -14,6 +15,7 @@ const setupInput = (conn) => {
   return stdin;
 };
 
+//controls
 const handleUserInput = function(data) {
   
   if (data === '\u0003') {

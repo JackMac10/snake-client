@@ -3,6 +3,7 @@ const net = require("net");
 const {connect} = require("./client");
 const {setupInput} = require("./input");
 
+// connecting message
 console.log("Connecting ...");
 
 const connection = connect();

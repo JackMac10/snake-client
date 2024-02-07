@@ -1,3 +1,4 @@
+// define connection
 let connection;
 
 const {setupInput} = require("./constants");
