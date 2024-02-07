@@ -3,23 +3,11 @@ const IP = "localhost"; // IP address here,
 const PORT = 50541; // PORT number here,
 
 
-// assert input comunication with program
-const setupInput = (conn) => {
-  connection = conn;
-  const stdin = process.stdin;
-  stdin.setRawMode(true);
-  stdin.setEncoding("utf8");
-  stdin.resume();
-  
-  stdin.on("data", handleUserInput);
-  return stdin;
-};
-
 //controls
 const handleUserInput = function(data) {
   
   if (data === '\u0003') {
-    console.log("GoodBye SSSNNNNAAAAAKKKEEE");
+    console.log("GoodBye SNAKE");
     process.exit();
   }
   if (data === 'w') {
@@ -44,6 +32,5 @@ const handleUserInput = function(data) {
 module.exports = {
   IP,
   PORT,
-  setupInput,
   handleUserInput,
 };
